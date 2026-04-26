@@ -1,3 +1,6 @@
+## 📁 Project Structure
+
+<pre>
 project/
 │
 ├── app/
@@ -24,3 +27,4 @@ project/
 │
 ├── requirements.txt
 └── README.md
+</pre>
