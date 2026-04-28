@@ -3,12 +3,19 @@
 <pre>
 WildScan-AI/
 │
-├── model/
-│   └── animal_model.pth
+├── app/                        # Presentation Layer (UI)
+│   └── app.py
 │
-├── app.py              # Streamlit entry point
-├── model_loader.py     # load model
-├── inference.py        # prediction logic
-├── utils.py            # preprocessing
+├── model/                      # Model + weights
+│   ├── neuralnet.pth
+│   └── model.py               # Model architecture
+│
+├── services/                   # Business Logic Layer
+│   └── inference.py
+│
+├── utils/                      # Utilities (preprocessing)
+│   └── preprocessing.py
+│
 ├── requirements.txt
+└── README.md
 </pre>
