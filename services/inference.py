@@ -4,6 +4,26 @@ from model.model import build_model
 import gdown
 import json
 import os
+# from huggingface_hub import hf_hub_download
+
+#To Load our model from `Hugging Face`, uncomment the below code and comment out the `Google Drive download` section
+# def load_model():
+#     try:
+#         # Downloads and caches the model automatically
+#         model_path = hf_hub_download(
+#             repo_id="your-username/wildscan-model",
+#             filename="neuralnet.pth",
+#             cache_dir="model"
+            # token=st.secrets["HF_TOKEN"]  # only needed for private repos
+#         )
+
+#         model = build_model()
+#         model.load_state_dict(torch.load(model_path, map_location="cpu"))
+#         model.eval()
+#         return model
+
+#     except Exception as e:
+#         raise RuntimeError(f"Model loading failed: {e}")
 
 # Google Drive download
 def download_model():
