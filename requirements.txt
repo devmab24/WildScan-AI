@@ -4,3 +4,4 @@ torch
 torchvision
 pillow>=10.4.0
 numpy
+gdown
